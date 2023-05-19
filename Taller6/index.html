@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro De Usuario</title>
+    <script src="index.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+ <h2> Registro de usuario </h2>
+ <section class="form"></section>
+ <form action="#" method="post"></form>
+ <h4 id="edad"></h4>
+
+ <input type="text" class="Campos" id="nombre" name="nombre" placeholder="Digite su nombre">
+
+ <input type="text" class="Campos" id="apellido" name="apellido" placeholder="Digite su apellido">
+ 
+ <input type="date" class="Campos" id="nacimiento" name="nacimiento" placeholder="Ingrese su fecha de nacimiento" onchange="calcularEdad()">
+
+ <input type="text" class="Campos" id="correo" name="correo" placeholder="Digite su correo electronico">
+
+ <input type="text" class="Campos" id="username" name="username" placeholder="Digite su nombre de usuario" onchange="validarUsuario()">
+
+ <input type="password" class="Campos" id="clave" name="clave" placeholder="Digite su contraseña" onchange="validarClave()">
+
+ <input type="password" class="Campos" id="confirmacion" name="confirmacion" placeholder="Confirmacion de contraseña" onchange="confirmarClave()">
+
+ <label for="enfermedades">¿Has sufrido de enfermedades?</label>
+ <select id="enfermedades" onchange="mostrarEnfermedades()">
+   <option value="no">No</option>
+   <option value="si">Sí</option>
+ </select>
+ 
+ <div id="divEnfermedades" style="display: none;">
+   <label for="enfermedadesContagiosas">'¿Cuales?:</label>
+   <input type="text" id="enfermedadesContagiosas">
+ </div>
+
+
+
+ 
+
+</body>
+</html>

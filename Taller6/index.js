@@ -1,4 +1,4 @@
-/*function calcularEdad (){
+function calcularEdad (){
     const fechaNacimiento = document.getElementById("nacimiento").value;
     console.log(fechaNacimiento);
 const fechaActual = new Date();  
@@ -21,7 +21,7 @@ const fechaActual = new Date();
     }
     return edad;
    
-};*/
+};
 
 function validarUsuario(){
         var regex = /^[a-zA-Z0-9]*$/;
@@ -85,6 +85,11 @@ function mostrarEnfermedades() {
     divEnfermedades.style.display = "none";
   }
 }
+
+
+
+
+
 
 
 
